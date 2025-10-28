@@ -1,0 +1,144 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "outfit";
+    font-weight: lighter;
+    user-select: none;
+
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    place-content: center;
+    gap: 20px;
+    background: linear-gradient(rgb(159, 100, 255), rgb(91, 91, 255));
+    background:linear-gradient(black, rgb(36, 0, 72));
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    padding: 10px;
+    background-color: aliceblue;
+}
+
+nav .instructor{
+    color: rgb(132, 0, 255);
+}
+
+.titles{
+    color: white;
+}
+
+.ToDoSection{
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+    height: 100%;
+    width: 400px;
+}
+
+
+.inputDiv{
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputDiv input{
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid blueviolet;
+    padding: 0px 10px;
+    font-size: 17px;
+}
+
+.inputDiv button{
+    width: 28%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(161, 53, 255);
+    color: white;
+    cursor: pointer;
+}
+
+
+ul{
+    list-style: none;
+    margin-top: 20px;     
+    width: 100%;   
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+ul::-webkit-scrollbar{
+    background-color: transparent;
+    width: 10px;
+}
+
+ul::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 5, 134);
+    border-radius: 30px;
+}
+
+ul li{
+    padding: 13px 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(70, 70, 70);
+    
+}
+
+ul li:hover{
+    background-color: rgba(62, 62, 62, 0.092);
+    color: black;
+}
+
+
+ul li .deleteItems{
+    background-color: rgb(255, 0, 81);
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+ul li:nth-child(even) .deleteItems{
+    background-color: rgb(39, 26, 26);
+}
+ul li:nth-child(even){
+    color: rgb(160, 59, 255);
+    /* filter: hue-rotate(350deg) saturate(1000%); */
+}
+ul li:nth-child(even):hover{
+    color: rgb(132, 0, 255);
+    /* filter: hue-rotate(350deg) saturate(1000%); */
+}
+
+.clickedEffect:active{
+    transform: scale(0.98);
+    user-select: none;
+}
